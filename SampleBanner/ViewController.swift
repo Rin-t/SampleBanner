@@ -39,20 +39,29 @@ final class ViewController: UIViewController {
         }
     }
 
+    @IBAction func tappedButton(_ sender: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.banners = [
+                Banner(title: "ヨッシーの本名", backgroundColor: .blue),
+                Banner(title: "実は", backgroundColor: .red),
+                Banner(title: "T.ヨシザウルスムンチャクッパス", backgroundColor: .systemGreen)
+            ]
+            self.collectionView.reloadData()
+            self.setTimer()
+            self.pageControl.numberOfPages = self.banners.count
+        }
+    }
+
+
     // Properties
-    private let banners = [
-        Banner(title: "ヨッシーの本名", backgroundColor: .blue),
-        Banner(title: "実は", backgroundColor: .red),
-        Banner(title: "T.ヨシザウルスムンチャクッパス", backgroundColor: .systemGreen)
-    ]
+    private var banners: [Banner] = []
     private var timer: Timer!
     private var currentIndex = 0
 
     // LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTimer()
-        pageControl.numberOfPages = banners.count
+
     }
 
     // Methods
