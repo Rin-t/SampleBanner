@@ -16,6 +16,8 @@
 		24CF669628388ADA00E67A84 /* SampleBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF669528388ADA00E67A84 /* SampleBannerTests.swift */; };
 		24CF66A028388ADA00E67A84 /* SampleBannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF669F28388ADA00E67A84 /* SampleBannerUITests.swift */; };
 		24CF66A228388ADA00E67A84 /* SampleBannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF66A128388ADA00E67A84 /* SampleBannerUITestsLaunchTests.swift */; };
+		24CF66AF28388D1000E67A84 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CF66AE28388D1000E67A84 /* BannerCollectionViewCell.xib */; };
+		24CF66B128388DD600E67A84 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF66B028388DD600E67A84 /* BannerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		24CF669B28388ADA00E67A84 /* SampleBannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CF669F28388ADA00E67A84 /* SampleBannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBannerUITests.swift; sourceTree = "<group>"; };
 		24CF66A128388ADA00E67A84 /* SampleBannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24CF66AE28388D1000E67A84 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		24CF66B028388DD600E67A84 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				24CF668028388AD600E67A84 /* SceneDelegate.swift */,
 				24CF668228388AD600E67A84 /* ViewController.swift */,
 				24CF668428388AD600E67A84 /* Main.storyboard */,
+				24F8E4E02838926800ABEFC7 /* Cell */,
 				24CF668728388ADA00E67A84 /* Assets.xcassets */,
 				24CF668928388ADA00E67A84 /* LaunchScreen.storyboard */,
 				24CF668C28388ADA00E67A84 /* Info.plist */,
@@ -125,6 +130,15 @@
 				24CF66A128388ADA00E67A84 /* SampleBannerUITestsLaunchTests.swift */,
 			);
 			path = SampleBannerUITests;
+			sourceTree = "<group>";
+		};
+		24F8E4E02838926800ABEFC7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				24CF66AE28388D1000E67A84 /* BannerCollectionViewCell.xib */,
+				24CF66B028388DD600E67A84 /* BannerCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			files = (
 				24CF668B28388ADA00E67A84 /* LaunchScreen.storyboard in Resources */,
 				24CF668828388ADA00E67A84 /* Assets.xcassets in Resources */,
+				24CF66AF28388D1000E67A84 /* BannerCollectionViewCell.xib in Resources */,
 				24CF668628388AD600E67A84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +275,7 @@
 			files = (
 				24CF668328388AD600E67A84 /* ViewController.swift in Sources */,
 				24CF667F28388AD600E67A84 /* AppDelegate.swift in Sources */,
+				24CF66B128388DD600E67A84 /* BannerCollectionViewCell.swift in Sources */,
 				24CF668128388AD600E67A84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
